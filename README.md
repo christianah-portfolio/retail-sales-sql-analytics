@@ -127,7 +127,20 @@ GROUP BY
      END
 ```
 
-The full script, with all ten business queries, is in the `sql` folder.
+The full script, with all ten business queries, is here: [sql/retail_sales_analysis.sql](sql/retail_sales_analysis.sql)
+
+---
+
+## Query Results
+
+**Revenue and orders by category**
+![Revenue by category](results/01_revenue_by_category.png)
+
+**Orders by time of day**
+![Orders by time of day](results/02_orders_by_time_of_day.png)
+
+**Month with the highest average sale in each year**
+![Best month by average sale](results/03_best_month_by_average_sale.png)
 
 ---
 
@@ -136,7 +149,6 @@ The full script, with all ten business queries, is in the `sql` folder.
 1. Open SQL Server Management Studio (SSMS) and create a database (the script does this in section 1).
 2. Import `data/retail_sales_dataset.csv` into the database, and name the table `Retail_Sales_Analysis`. Keep the original column names, because the script renames the misspelt `quantiy` column itself.
 3. Open `sql/retail_sales_analysis.sql` and run it section by section: setup, data check, cleaning, exploration, then the business analysis.
-4. Run the cleaning section only once, because it renames a column and deletes records.
 
 ---
 
@@ -155,6 +167,10 @@ retail-sales-sql-analytics/
 ├── README.md
 ├── sql/
 │   └── retail_sales_analysis.sql
-└── data/
-    └── retail_sales_dataset.csv
+├── data/
+│   └── retail_sales_dataset.csv
+└── results/
+    ├── 01_revenue_by_category.png
+    ├── 02_orders_by_time_of_day.png
+    └── 03_best_month_by_average_sale.png
 ```
