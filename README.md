@@ -1,6 +1,7 @@
 # Retail Sales Analysis (SQL)
 
 **A SQL Server project that cleans a retail sales dataset and answers ten business questions about sales, customers, and when people shop.**
+
 ---
 
 ## Project Overview
@@ -127,6 +128,15 @@ GROUP BY
 ```
 
 The full script, with all ten business queries, is in the `sql` folder.
+
+---
+
+## How to Run This Project
+
+1. Open SQL Server Management Studio (SSMS) and create a database (the script does this in section 1).
+2. Import `data/retail_sales_dataset.csv` into the database, and name the table `Retail_Sales_Analysis`. Keep the original column names, because the script renames the misspelt `quantiy` column itself.
+3. Open `sql/retail_sales_analysis.sql` and run it section by section: setup, data check, cleaning, exploration, then the business analysis.
+4. Run the cleaning section only once, because it renames a column and deletes records.
 
 ---
 
