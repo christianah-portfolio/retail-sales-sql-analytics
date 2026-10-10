@@ -134,8 +134,7 @@ The full script, with all ten business queries, is here: [sql/retail_sales_analy
 ## Query Results
 
 **Revenue and orders by category**
-![Revenue by category](results/01_revenue_by_category.png)
-
+![Revenue by category](https://github.com/christianah-portfolio/retail-sales-sql-analytics/blob/main/results/01_revenue_by_category.png)
 **Orders by time of day**
 ![Orders by time of day](results/02_orders_by_time_of_day.png)
 
