@@ -1,34 +1,36 @@
 # Retail Sales Analysis (SQL)
 
-**A SQL Server project that cleans a retail sales dataset and answers ten business questions about sales, customers, and when people shop.**
+**A SQL Server project analysing retail sales data to identify sales trends, customer purchasing patterns, and differences in revenue across product categories. The project involved cleaning the dataset, validating records, and using T-SQL queries to answer business questions and extract actionable insights.**
 
 ---
 
 ## Project Overview
 
-**Brief Description**
-A SQL analysis of 1,997 retail sales transactions from 2022 and 2023, covering data cleaning, data exploration, and ten business queries on revenue, product categories, customers, and time of day.
-
 **Tools & Skills Used**
-SQL Server, T-SQL, Data Cleaning, Aggregations (`SUM`, `COUNT`, `AVG`), `GROUP BY`, `CASE WHEN`, Window Functions (`RANK() OVER`), Subqueries, Date Functions.
+Microsoft SQL Server, T-SQL, Data Cleaning, Data Validation, Aggregations, Filtering, Grouping, Business Analysis.
 
 **Project Goals**
-To clean a raw sales table and use SQL to find which categories earn the most, who the best customers are, and when customers buy.
+To analyse retail transactions, understand customer purchasing patterns, compare sales performance across product categories, and identify trends that can support business decisions.
 
-**Results**
-Electronics, Clothing, and Beauty earn almost the same revenue (about 287K to 314K each), 306 transactions were worth more than 1,000, and about 53% of orders were placed in the evening.
+**Key Findings**
+The original dataset contained 2,000 records, which was reduced to 1,997 after cleaning. The analysis examined revenue across product categories, customer purchasing behaviour, and shopping patterns at different times of the day. Evening transactions accounted for approximately 53% of orders.
 
 ---
 
 ## Business Questions
 
-1. How many sales were made, and how many customers were served?
-2. How much revenue did each product category earn?
-3. Do men and women buy different categories?
-4. Which month has the highest average transaction value in each year?
-5. Who are the top five customers?
-6. How many unique customers bought from each category?
-7. At what time of day do customers buy?
+The analysis used SQL Server to answer the following ten business questions:
+
+1. **Daily Sales**: What sales transactions were recorded on November 5, 2022?
+2. **Clothing Sales**: Which clothing transactions in November 2022 involved purchases of four or more units?
+3. **Category Performance**: How do total revenue and order counts compare across product categories?
+4. **Customer Demographics**: What is the average age of customers purchasing Beauty products?
+5. **High-Value Transactions**: Which individual transactions generated more than 1,000 in sales?
+6. **Gender and Category Analysis**: How do transaction volumes differ by gender across product categories?
+7. **Monthly Sales Performance**: Which month had the highest average transaction value in each year?
+8. **Top Customers**: Who are the five customers with the highest total sales?
+9. **Customer Reach**: How many unique customers purchased from each product category?
+10. **Shopping Time Patterns**: How many orders were made in the morning, afternoon, and evening?
 
 ---
 
